@@ -7,7 +7,7 @@
     networking.hostName = "installer";
     sbfde.installer.unattended = {
       enable = true;
-      installDev = "/dev/vda";
+      installDev = "/dev/vdb";
       nixOSConfig = "nas-vm-installable";
     };
   };
