@@ -38,6 +38,7 @@ in
       name = "cluster";
       gid = clusterUserGIDInt;
     };
+    homelab.k8sss.enable = true;
     homelab.nfs-provisioner = {
       enable = true;
       path = "/mnt/cluster/data";
