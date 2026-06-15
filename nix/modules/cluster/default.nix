@@ -10,7 +10,7 @@ let
   clusterUserUID = toString clusterUserUIDInt;
   clusterUserGID = toString clusterUserGIDInt;
   userUID = toString config.users.users.${config.nas.user.username}.uid;
-  userGID = toString config.users.groups.${config.nas.user.username}.gid;
+  userGID = "100";
 in
 {
   options.nas.cluster = {
@@ -59,9 +59,12 @@ in
       '';
     };
     kubetree.service-macros = {
-      runAsUser = clusterUserUIDInt;
-      runAsGroup = clusterUserGIDInt;
       acmeProvider = "letsencrypt-production";
+      securityContext = {
+        runAsUser = clusterUserUIDInt;
+        runAsGroup = clusterUserGIDInt;
+        supplementalGroups = [ 100 ];
+      };
     };
     homelab.cilium = {
       enable = true;
