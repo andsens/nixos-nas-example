@@ -15,6 +15,35 @@
         "type": "github"
       }
     },
+    "docs": {
+      "inputs": {
+        "flake-parts": [
+          "setup-secrets",
+          "flake-parts"
+        ],
+        "nixpkgs": [
+          "setup-secrets",
+          "nixpkgs"
+        ],
+        "systems": [
+          "setup-secrets",
+          "systems"
+        ]
+      },
+      "locked": {
+        "lastModified": 1786905731,
+        "narHash": "sha256-7xQkp4dZ+W6vy5dxA+Dz2OPTuuzdqmsGvPg+UToC8vw=",
+        "owner": "andsens",
+        "repo": "nix-docs",
+        "rev": "ec87fef109b4bcba49ed1aae272a325605744f65",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andsens",
+        "repo": "nix-docs",
+        "type": "github"
+      }
+    },
     "flake-compat": {
       "flake": false,
       "locked": {
@@ -595,6 +624,7 @@
     },
     "setup-secrets": {
       "inputs": {
+        "docs": "docs",
         "flake-parts": [
           "flake-parts"
         ],
@@ -606,11 +636,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1779543994,
-        "narHash": "sha256-q/MfzHpRfcOUUdbDKE5ggPi22FEAp3IbFL7HuNldzls=",
+        "lastModified": 1791831730,
+        "narHash": "sha256-9I7zacKYiiZSrnPzYIX1KqF1u8TZx8Ub7kbDENIZ/gs=",
         "owner": "andsens",
         "repo": "nixos-setup-secrets",
-        "rev": "f51d526211dc98018865ffd8335177d7af658a62",
+        "rev": "5c510599a5b240f30cf6968363b9113d2eeb9713",
         "type": "github"
       },
       "original": {
