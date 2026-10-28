@@ -15,6 +15,35 @@
         "type": "github"
       }
     },
+    "docs": {
+      "inputs": {
+        "flake-parts": [
+          "openzfs",
+          "flake-parts"
+        ],
+        "nixpkgs": [
+          "openzfs",
+          "nixpkgs"
+        ],
+        "systems": [
+          "openzfs",
+          "systems"
+        ]
+      },
+      "locked": {
+        "lastModified": 1786905731,
+        "narHash": "sha256-7xQkp4dZ+W6vy5dxA+Dz2OPTuuzdqmsGvPg+UToC8vw=",
+        "owner": "andsens",
+        "repo": "nix-docs",
+        "rev": "ec87fef109b4bcba49ed1aae272a325605744f65",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andsens",
+        "repo": "nix-docs",
+        "type": "github"
+      }
+    },
     "flake-compat": {
       "flake": false,
       "locked": {
@@ -393,6 +422,7 @@
     },
     "openzfs": {
       "inputs": {
+        "docs": "docs",
         "flake-parts": [
           "flake-parts"
         ],
@@ -407,11 +437,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1779549880,
-        "narHash": "sha256-9vl7lWfye2zRieQehUw7Do484cbkVaE1ClOiy1GCZRY=",
+        "lastModified": 1786906437,
+        "narHash": "sha256-84Y6DIh0HV/DzjL25lNGWWRE0dPduzBpMA1mEe/XzRA=",
         "owner": "andsens",
         "repo": "nixos-openzfs",
-        "rev": "7bed1faf8bc3af0e493e2d903780ae5dff97c012",
+        "rev": "3247346acaf05052f3359cd6ddac6d6298b925d7",
         "type": "github"
       },
       "original": {
